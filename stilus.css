@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Verdana, sans-serif;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-image: url("kepek/black.png");
+    color: beige;
+    font-size: 10pt;
+}
+*{box-sizing: border-box;}
+main{
+    
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    color: black;
+    background-color: rgb(211 211 211);
+
+   
+}
+table{
+    text-align: center;
+}
+header{
+   background-image: url("kepek/game.jpg");
+   height: 300px;
+    background-size: cover;
+}
+nav{
+    background-color: black;
+}
+nav ul{
+    list-style: none;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(12, auto);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li:active{
+    background-color: orange;
+}
+nav li:hover{
+    background-color: orange;
+}
+nav ul{
+    border: 1px solid gray;
+    padding-left: 0;
+    margin-top: 0px;
+
+}
+nav li{
+    border: 1px solid white;
+    padding: 7px;
+}
+article{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    background-color: rgb(211 211 211);
+    text-align: justify;
+    gap: 10px;
+    padding: 10px;
+}
+article p, li{
+    font-size: 10px;
+}
+article h1{
+    font-size: 15px;
+}
+article li{
+    list-style: square;
+}
+img{
+    width: 100%;
+    padding: 10px;
+}
+footer
+{
+    background-color: orange;
+    text-align: center;
+}
+    
+@media only screen and (max-width: 700px) {
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    article{
+        gap: 5px;
+    }
+    img{
+        width: 100%;
+    }
+}
